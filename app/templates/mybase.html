@@ -1,17 +1,34 @@
-{% extends "bootstrap/mybase.html" %}
+{% extends "bootstrap/base.html" %}
 
-{% block title %}EnterTheData{% endblock %}
-
+{% block title %} EnterThe Data mybase title {% endblock %}
+ in between
 {% block head %}
 {{ super() }}
+mybase head
 <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
 <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+<!--- <div class="header-img"></div> -->
 {% endblock %}
 
-<div class="header-img"></div>
+
 
 {% block navbar %}
+<!--- <div class="header-img"></div>
+<div id="the whole thing" style="float:left; height:100%; width:100%">
+    <div id="leftThing" style="float:left; width:25%; background-color:blue;">
+         Left Side Menu
+    </div>
+    <div id="content" style="float:left; width:50%; background-color:green;">
+         Random Content
+    </div>
+    <div id="rightThing" style="float:right; width:25%; background-color:yellow;">
+         Right Side Menu
+    </div>
+</div>
+-->
+
 <div class="navbar navbar-inverse" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -21,7 +38,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{ url_for('main.index') }}">EnterTheData</a>
+            <a class="navbar-brand" href="{{ url_for('main.index') }}">Enter The Data navbar</a>
         </div>
         <div class="navbar-collapse collapse">
 

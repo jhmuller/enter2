@@ -1,26 +1,29 @@
-{% extends "base.html" %}
+{% extends "mybase.html" %}
 {% import "bootstrap/wtf.html" as wtf %}
 {% import "_macros.html" as macros %}
-
-{% block title %}Enter The Data{% endblock %}
+header
+{% block title %}Enter The Data Title Block{% endblock %}
 
 {% block page_content %}
 <div class="page-header">
-    <h1>Enter The Data</h1>
+    <h1>Enter The Data content block </h1>
 </div>
 <!-- the navigation links -->
 
-<ul.hor>
-  <li><a href="#news">Projects</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul.hor>
-
-<div class="page-header">
-    <h1>About</h1>
-    <h1>Blog</h1>
-    <h1>Projects</h1>
+<div id="the whole thing" style="float:left; height:100%; width:100%">
+    <div id="leftThing" style="float:left; width:30%; background-color:gray;">
+         <h1> Left </h1>
+    </div>
+    <div id="content" style="float:left; width:50%; background-color:gray;">
+         middle
+    </div>
+    <div id="rightThing" style="float:right; width:25%; background-color:gray;">
+      <h1>About</h1>
+      <h1>Blog</h1>
+      <h1>Projects</h1>
+    </div>
 </div>
+
 
 
 {% if pagination %}
