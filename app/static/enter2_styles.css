@@ -8,14 +8,19 @@ div.my-test {
   display: flex;
   flex-direction: row;
   justify-content: right;
-  background-color: red;
 }
 
 .row-block {
-  width: 303px;
-  background-color: yellow;
+  width: 150px;
 }
 
+div.gray-back {
+  background-color: rgba(200,200,200,.5);
+}
+
+div.light-gray-back {
+  background-color: #DDDDDD;
+}
 
 
 .etd-img {

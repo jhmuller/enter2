@@ -1,0 +1,24 @@
+{% extends "mybase.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% import "_macros.html" as macros %}
+
+{% block title %}Enter The Data Title Block{% endblock %}
+
+{% block page_content %}
+<a href="mailto::jmuller.ics88@gtalumni.org">email</a>
+<a href="https://www.linkedin.com/in/john-m-0757304/">LinkedIn</a>
+
+<!-- the navigation links -->
+
+
+{% if pagination %}
+<div class="pagination">
+    {{ macros.pagination_widget(pagination, '.index') }}
+</div>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+{{ pagedown.include_pagedown() }}
+{% endblock %}

@@ -56,6 +56,22 @@ def index():
     return render_template('index.html', form=form, posts=posts,
                            show_followed=show_followed, pagination=pagination)
 
+@main.route('/About', methods=['GET', 'POST'])
+def about():
+    return render_template('about.html')
+
+
+@main.route('/projects', methods=['GET', 'POST'])
+def projects():
+    return render_template('projects.html')
+
+@main.route('/Contact', methods=['GET', 'POST'])
+def contact():
+    return render_template('contact.html')
+
+@main.route('/Blog', methods=['GET', 'POST'])
+def blog():
+    return render_template('blog.html')
 
 @main.route('/user/<username>')
 def user(username):
