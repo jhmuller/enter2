@@ -1,21 +1,10 @@
-{% extends "mybase.html" %}
+{% extends "layout.html" %}
 {% import "bootstrap/wtf.html" as wtf %}
 {% import "_macros.html" as macros %}
 
 {% block title %}Enter The Data Title Block{% endblock %}
 
-{% block page_content %}
-blog
-
-<!-- the navigation links -->
-
-
-{% if pagination %}
-<div class="pagination">
-    {{ macros.pagination_widget(pagination, '.index') }}
-</div>
-{% endif %}
-{% endblock %}
+{% block inner %} <p class="p-center">Coming Soon!</p>  {% endblock %}
 
 {% block scripts %}
 {{ super() }}

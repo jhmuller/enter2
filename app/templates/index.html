@@ -1,33 +1,28 @@
 
 {% import "bootstrap/wtf.html" as wtf %}
 {% import "_macros.html" as macros %}
-{% extends "mybase.html" %}
+{% extends "layout.html" %}
 {% block title %}Enter The Data{% endblock %}
 
-{% block content %}
-
-Welcome to Enter The Data. (<em>"Enter"</em> meaning <em>"step into and explore"</em>)<br><br>
-
-I am a computer scientist by training but in my professional life I’ve also played the part of  a mathematician,
- electrical engineer, finance quant and data scientist.
+{% block inner %}
+<p class="p-center">
+Welcome to Enter The Data. <br>
+ (<em>Enter</em> as in <em>step into and explore</em>) </p>
+<br><br>
+I am a computer scientist, a data scientist and a finance quant.
 <br><br>
 I like to solve practical problems and create useful applications.
  I love doing  analytics, machine learning, algorithms and data science,
  so I am thrilled that these disciplines have all become very popular and that just about
- every industry is using their methods to solve problems.
-It means more fun and rewarding opportunities for me
-but I would also like to think it also means something positive for us all in general.
-<!-- the navigation links -->
-
-{% if pagination %}
-<!---
-<div class="pagination">
-    {{ macros.pagination_widget(pagination, '.index') }}
-</div> -->
-{% endif %}
-
+ every industry is using their methods to solve problems. <br><br>
+It means more fun and rewarding opportunities for me.
+<br> <br>
+I would also like to think it also means something positive for us all in general.
+<br><br>
 {% endblock %}
 
+<a href="mailto::jmuller.ics88@gtalumni.org">email</a><br>
+<a href="https://www.linkedin.com/in/john-m-0757304/">LinkedIn</a>
 {% block scripts %}
 {{ super() }}
 {{ pagedown.include_pagedown() }}

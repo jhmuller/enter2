@@ -1,10 +1,10 @@
-{% extends "mybase.html" %}
+
 {% import "bootstrap/wtf.html" as wtf %}
 {% import "_macros.html" as macros %}
+{% extends "layout.html" %}
+{% block title %}Title {% endblock %}
 
-{% block title %}Enter The Data Title Block{% endblock %}
-
-{% block page_content %}
+{% block inner %}
 I am a computer scientist by training but in my professional life I’ve also played the part of  a mathematician,
  electrical engineer, finance quant and data scientist.
 
@@ -15,14 +15,6 @@ I like to solve practical problems and create useful applications.
 It means more fun and rewarding opportunities for me
 but I would also like to think it also means something positive for us all in general.
 
-<!-- the navigation links -->
-
-
-{% if pagination %}
-<div class="pagination">
-    {{ macros.pagination_widget(pagination, '.index') }}
-</div>
-{% endif %}
 {% endblock %}
 
 {% block scripts %}

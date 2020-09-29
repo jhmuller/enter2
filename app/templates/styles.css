@@ -6,6 +6,10 @@
   background-color: red;
 }
 
+.navbar-default .navbar-nav>li {
+width: auto;
+}
+
 .row-block {
   width: 303px;
   background-color: yellow;
