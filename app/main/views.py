@@ -1,6 +1,8 @@
 from flask import render_template, redirect, url_for, abort, flash, request,\
     current_app, make_response
 from flask_login import login_required, current_user
+
+from . import main
 from flask_sqlalchemy import get_debug_queries
 from . import main
 from .forms import EditProfileForm, EditProfileAdminForm, PostForm,\
@@ -63,7 +65,8 @@ def about():
 
 @main.route('/projects', methods=['GET', 'POST'])
 def projects():
-    return render_template('projects.html')
+    return redirect("http://jhmuller.github.io")
+    #return render_template('projects.html')
 
 @main.route('/Contact', methods=['GET', 'POST'])
 def contact():
@@ -71,7 +74,8 @@ def contact():
 
 @main.route('/Blog', methods=['GET', 'POST'])
 def blog():
-    return render_template('blog.html')
+    return redirect("http://jhmuller.github.io")
+    #return render_template('blog.html')
 
 @main.route('/user/<username>')
 def user(username):
